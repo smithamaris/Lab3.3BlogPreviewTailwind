@@ -1,46 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <title>Frontend Mentor | Blog preview card</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <title>Frontend Mentor | Blog preview card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- <link rel="stylesheet" href="./style.css"> -->
   </head>
 
-<body class="bg-yellow-300 flex items-center justify-center min-h-screen font-sans">
-  <main>
-    <!-- <div class="card-container"> -->
+  <body
+    class="bg-yellow-300 flex items-center justify-center min-h-screen font-sans"
+  >
+    <main>
+      <!-- <div class="card-container"> -->
 
-      <div class="bg-white max-w-sm rounded-2xl shadow-lg border border-gray-200 overflow-hidden p-5">
-
+      <div
+        class="bg-white max-w-sm rounded-2xl shadow-[10px_10px] border-solid border-gray-200 overflow-hidden p-5"
+      >
         <!-- CARD IMAGE  -->
-         <div class="mb-4">
+        <div class="mb-4">
+          <img
+            src="./assets/images/illustration-article.svg"
+            alt="abstract code image"
+            class="w-full rounded-xl"
+          />
+        </div>
+        <!-- META  -->
+        <section class="mb-3">
+          <span
+            class="bg-yellow-300 text-black text-xs font-bold uppercase font-figtree weight-500 px-3 py-1 pb-2 rounded-md"
+            >Learning</span
+          >
+          <p class="text-gray-800 text-sm mt-2">Published 21 Dec 2023</p>
+        </section>
+        <!-- BODY -->
+        <section class="mb-4">
+          <h1
+            class="text-xl font-extrabold text-gray-900 hover: text-gray-500 cursor-pointer transition-colors"
+          >
+            HTML & CSS foundations
+          </h1>
 
-        <img src="./assets/images/illustration-article.svg" alt="abstract code image" class="w-full rounded-xl"/>
-      </div>
-     <!-- META  -->
-    <section class="mb-3">
-      <span class="tag">Learning</span>
-      <p class="date">Published 21 Dec 2023</p>
-    </section>
+          <p class="text-gray-600 text-base mt-2 leading-relaxed">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </section>
+        <!-- FOOTER -->
+        <footer class="flex items-center gap-3">
+          <img
+            src="./assets/images/image-avatar.webp"
+            alt="avatar"
+            class="w-8 h-8 rounded-full"
+          />
+          <p class="text-sm font-bold text-gray-900">Greg Hooper</p>
 
-    <section class="card-body">
-  <h1>HTML & CSS foundations</h1>
-  <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
-  </section>
-  <footer>
-<img src="./assets/images/image-avatar.webp" alt="avatar">
-  Amaris Hooper
-
-  <!-- <div class="attribution">
+          <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Amaris Smith/a>.
   </div> -->
-
-  </footer>
-</div>
-</main>
-</body>
+        </footer>
+      </div>
+    </main>
+  </body>
 </html>
